@@ -12,12 +12,12 @@ rm ${DT_PATH}/dt-example/execution/.gitkeep
 odtp new odtp-component-entry \
 --name odtp-component-example \
 --component-version 0.1.1 \
---repository https://github.com/odtp-org/odtp-component-example 
+--repository https://github.com/odtp-org/odtp-component-example
 
 odtp new odtp-component-entry \
 --name odtp-pygwalker \
 --component-version v0.1.0 \
---repository https://github.com/odtp-org/odtp-postgis-dataloader
+--repository https://github.com/odtp-org/odtp-pygwalker
 
 # Creating new digital twin
 odtp new digital-twin-entry \

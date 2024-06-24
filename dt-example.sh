@@ -11,7 +11,7 @@ rm ${DT_PATH}/dt-example/execution/.gitkeep
 # Pulling all the components and versions
 odtp new odtp-component-entry \
 --name odtp-component-example \
---component-version 0.1.1 \
+--component-version v0.1.2 \
 --repository https://github.com/odtp-org/odtp-component-example
 
 odtp new odtp-component-entry \

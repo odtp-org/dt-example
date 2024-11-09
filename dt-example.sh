@@ -1,9 +1,9 @@
 #!/bin/bash
-ODTP_USER_EMAIL=
+ODTP_USER_EMAIL=maxm@gmail.com
 DT_PATH=$(pwd)
 
-DIGITAL_TWIN_NAME=dt-example
-EXECUTION_NAME=dt-example-execution-1
+DIGITAL_TWIN_NAME=dt-example-1
+EXECUTION_NAME=dt-example-execution-3
 
 # Removing gitkeep
 rm ${DT_PATH}/dt-example/execution/.gitkeep
@@ -11,12 +11,12 @@ rm ${DT_PATH}/dt-example/execution/.gitkeep
 # Pulling all the components and versions
 odtp new odtp-component-entry \
 --name odtp-component-example \
---component-version 0.1.1 \
+--component-version v0.1.6 \
 --repository https://github.com/odtp-org/odtp-component-example
 
 odtp new odtp-component-entry \
 --name odtp-pygwalker \
---component-version v0.1.0 \
+--component-version v0.1.4 \
 --repository https://github.com/odtp-org/odtp-pygwalker
 
 # Creating new digital twin
@@ -28,7 +28,7 @@ odtp new digital-twin-entry \
 odtp new execution-entry \
 --name ${EXECUTION_NAME} \
 --digital-twin-name ${DIGITAL_TWIN_NAME} \
---component-tags odtp-component-example:v0.1.1,odtp-pygwalker:v0.1.0 \
+--component-tags odtp-component-example:v0.1.6,odtp-pygwalker:v0.1.4 \
 --parameter-files ${DT_PATH}/dt-example/001.parameters, \
 --ports ,8502:8501
 

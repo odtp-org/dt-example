@@ -14,7 +14,7 @@ odtp new odtp-component-entry \
 --repository https://github.com/odtp-org/odtp-component-example
 
 odtp new odtp-component-entry \
---component-version v0.1.6a \
+--component-version v0.1.6 \
 --repository https://github.com/odtp-org/odtp-pygwalker
 
 # Creating new digital twin

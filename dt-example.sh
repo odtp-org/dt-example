@@ -10,13 +10,11 @@ rm ${DT_PATH}/dt-example/execution/.gitkeep
 
 # Pulling all the components and versions
 odtp new odtp-component-entry \
---name odtp-component-example \
---component-version v0.1.6 \
+--component-version v0.1.8 \
 --repository https://github.com/odtp-org/odtp-component-example
 
 odtp new odtp-component-entry \
---name odtp-pygwalker \
---component-version v0.1.4 \
+--component-version v0.1.6 \
 --repository https://github.com/odtp-org/odtp-pygwalker
 
 # Creating new digital twin
@@ -39,5 +37,4 @@ odtp execution prepare \
 
 # Running execution
 odtp execution run \
---execution-name ${EXECUTION_NAME} \
---project-path ${DT_PATH}/dt-example/execution
+--execution-name ${EXECUTION_NAME}

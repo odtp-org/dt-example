@@ -36,5 +36,4 @@ odtp execution prepare \
 
 # Running execution
 odtp execution run \
---execution-name ${EXECUTION_NAME} \
---project-path ${DT_PATH}/dt-example/execution
+--execution-name ${EXECUTION_NAME}
